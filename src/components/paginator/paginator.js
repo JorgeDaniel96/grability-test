@@ -19,6 +19,7 @@ const methods = {
 		if (this.currentPage <= this.totalPages) {
 			let next = this.currentPage + 1;
 			this.paginationCallback(next);
+			console.log(next);
 			this.currentPage = next;
 		}
 	},
@@ -27,6 +28,7 @@ const methods = {
 		if (this.currentPage > 1) {
 			let back = this.currentPage - 1;
 			this.paginationCallback(back);
+			console.log(back);
 			this.currentPage = back;
 		} 
 	}
